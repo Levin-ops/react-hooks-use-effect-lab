@@ -15,7 +15,7 @@ function Question({ question, onAnswered }) {
       setTimeRemaining(previousTimeRemaining => previousTimeRemaining -1);
     }, 1000);
 
-    if (timeRemaining ===0){
+    if (timeRemaining === 0){
       clearTimeout(timer);
       setTimeRemaining(10)
       onAnswered(false)
